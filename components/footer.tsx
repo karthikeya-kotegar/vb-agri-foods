@@ -157,19 +157,19 @@ export default function Footer() {
             <div className="space-y-0.5 sm:space-y-3">
               <div className="flex items-center space-x-2">
                 <Mail className="w-3 h-3 sm:w-4 sm:h-4 text-orange-400" />
-                <span className="text-xs sm:text-sm">info@vbfoods.com</span>
+                <span className="text-xs sm:text-sm">Vbfoodsdvg@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-3 h-3 sm:w-4 sm:h-4 text-orange-400" />
-                <span className="text-xs sm:text-sm">+91 98765 43210</span>
+                <span className="text-xs sm:text-sm">+91 91645 60222</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Globe className="w-3 h-3 sm:w-4 sm:h-4 text-orange-400" />
-                <span className="text-xs sm:text-sm">www.vbfoods.com</span>
+                <span className="text-xs sm:text-sm">www.vb-foods.com</span>
               </div>
               <div className="mt-2 sm:mt-4">
                 <p className="text-xs sm:text-sm text-gray-300">
-                  GST No: 29APCPN7623R1Z3
+                  GST No: 29BNNPV8430L1Z0
                 </p>
               </div>
             </div>
