@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Mail, Phone, MapPin, Globe } from "lucide-react"
+import Link from "next/link";
+import { Mail, Phone, MapPin, Globe } from "lucide-react";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <footer className="bg-green-700 text-white">
@@ -17,7 +17,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-8">
           {/* Quick Contact */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <h3 className="text-sm sm:text-lg font-semibold mb-2 sm:mb-4 text-white">Quick Contact</h3>
+            <h3 className="text-sm sm:text-lg font-semibold mb-2 sm:mb-4 text-white">
+              Quick Contact
+            </h3>
             <div className="space-y-0.5 sm:space-y-3">
               <div className="flex items-center space-x-2">
                 <span className="text-orange-400">🏢</span>
@@ -25,28 +27,32 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <span className="text-orange-400">👤</span>
-                <span className="text-xs sm:text-sm">Mr. Rajesh Kumar</span>
+                <span className="text-xs sm:text-sm">Mr. Veeresh MV</span>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-orange-400 mt-1" />
                 <div className="text-xs sm:text-sm">
-                  Ground Floor, No.152, 3rd Block,
+                  4th Cross, 2nd main,
                   <br />
-                  80 Feet Road, HBR Layout,
+                  Shivkumarswamy Layout,
                   <br />
-                  Bangalore, Karnataka - 560043, India
+                  Davangere, Karnataka - 577005, India
                 </div>
               </div>
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 <Phone className="w-3 h-3 sm:w-4 sm:h-4 text-orange-400" />
-                <span className="text-xs sm:text-sm underline cursor-pointer">View Mobile Number</span>
-              </div>
+                <span className="text-xs sm:text-sm underline cursor-pointer">
+                  View Mobile Number
+                </span>
+              </div> */}
             </div>
           </div>
 
           {/* General Links */}
           <div>
-            <h3 className="text-sm sm:text-lg font-semibold mb-2 sm:mb-4 text-white">General Links</h3>
+            <h3 className="text-sm sm:text-lg font-semibold mb-2 sm:mb-4 text-white">
+              General Links
+            </h3>
             <div className="space-y-0 sm:space-y-2">
               <button
                 onClick={() => scrollToSection("home")}
@@ -66,10 +72,16 @@ export default function Footer() {
               >
                 Products
               </button>
-              <Link href="#" className="block text-xs sm:text-sm hover:text-orange-400 transition-colors">
+              <Link
+                href="#"
+                className="block text-xs sm:text-sm hover:text-orange-400 transition-colors"
+              >
                 Testimonials
               </Link>
-              <Link href="#" className="block text-xs sm:text-sm hover:text-orange-400 transition-colors">
+              <Link
+                href="#"
+                className="block text-xs sm:text-sm hover:text-orange-400 transition-colors"
+              >
                 Videos
               </Link>
               <button
@@ -78,35 +90,60 @@ export default function Footer() {
               >
                 Contact Us
               </button>
-              <Link href="#" className="block text-xs sm:text-sm hover:text-orange-400 transition-colors">
+              <Link
+                href="#"
+                className="block text-xs sm:text-sm hover:text-orange-400 transition-colors"
+              >
                 Site Map
               </Link>
               <div className="mt-1 sm:mt-2">
-                <span className="bg-red-600 text-white px-2 py-1 text-xs rounded">RSS</span>
+                <span className="bg-red-600 text-white px-2 py-1 text-xs rounded">
+                  RSS
+                </span>
               </div>
             </div>
           </div>
 
           {/* Products */}
           <div>
-            <h3 className="text-sm sm:text-lg font-semibold mb-2 sm:mb-4 text-white">Products</h3>
+            <h3 className="text-sm sm:text-lg font-semibold mb-2 sm:mb-4 text-white">
+              Products
+            </h3>
             <div className="space-y-0 sm:space-y-2">
-              <Link href="#" className="block text-xs sm:text-sm hover:text-orange-400 transition-colors">
+              <Link
+                href="#"
+                className="block text-xs sm:text-sm hover:text-orange-400 transition-colors"
+              >
                 Popcorn Maize
               </Link>
-              <Link href="#" className="block text-xs sm:text-sm hover:text-orange-400 transition-colors">
+              <Link
+                href="#"
+                className="block text-xs sm:text-sm hover:text-orange-400 transition-colors"
+              >
                 Chana (Chickpeas)
               </Link>
-              <Link href="#" className="block text-xs sm:text-sm hover:text-orange-400 transition-colors">
+              <Link
+                href="#"
+                className="block text-xs sm:text-sm hover:text-orange-400 transition-colors"
+              >
                 Chia Seeds
               </Link>
-              <Link href="#" className="block text-xs sm:text-sm hover:text-orange-400 transition-colors">
+              <Link
+                href="#"
+                className="block text-xs sm:text-sm hover:text-orange-400 transition-colors"
+              >
                 Premium Rice
               </Link>
-              <Link href="#" className="block text-xs sm:text-sm hover:text-orange-400 transition-colors">
+              <Link
+                href="#"
+                className="block text-xs sm:text-sm hover:text-orange-400 transition-colors"
+              >
                 Finger Millet (Ragi)
               </Link>
-              <Link href="#" className="block text-xs sm:text-sm hover:text-orange-400 transition-colors">
+              <Link
+                href="#"
+                className="block text-xs sm:text-sm hover:text-orange-400 transition-colors"
+              >
                 Other Grains & Pulses
               </Link>
             </div>
@@ -114,7 +151,9 @@ export default function Footer() {
 
           {/* Company Info */}
           <div>
-            <h3 className="text-sm sm:text-lg font-semibold mb-2 sm:mb-4 text-white">Company Info</h3>
+            <h3 className="text-sm sm:text-lg font-semibold mb-2 sm:mb-4 text-white">
+              Company Info
+            </h3>
             <div className="space-y-0.5 sm:space-y-3">
               <div className="flex items-center space-x-2">
                 <Mail className="w-3 h-3 sm:w-4 sm:h-4 text-orange-400" />
@@ -129,7 +168,9 @@ export default function Footer() {
                 <span className="text-xs sm:text-sm">www.vbfoods.com</span>
               </div>
               <div className="mt-2 sm:mt-4">
-                <p className="text-xs sm:text-sm text-gray-300">GST No: 29APCPN7623R1Z3</p>
+                <p className="text-xs sm:text-sm text-gray-300">
+                  GST No: 29APCPN7623R1Z3
+                </p>
               </div>
             </div>
           </div>
@@ -138,18 +179,22 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-3 sm:mt-8 pt-3 sm:pt-8 border-t border-green-600">
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
-            <div className="text-xs sm:text-sm text-gray-300 text-center">© 2024 VB Foods. All rights reserved.</div>
+            <div className="text-xs sm:text-sm text-gray-300 text-center">
+              © 2024 VB Foods. All rights reserved.
+            </div>
           </div>
         </div>
       </div>
 
       {/* WhatsApp Button */}
-      <div className="fixed bottom-2 sm:bottom-4 right-2 sm:right-4 z-50">
+      {/* <div className="fixed bottom-2 sm:bottom-4 right-2 sm:right-4 z-50">
         <button className="bg-green-500 hover:bg-green-600 text-white p-2 sm:p-3 rounded-full shadow-lg transition-colors flex items-center">
           <span className="text-base sm:text-xl">💬</span>
-          <span className="ml-1 sm:ml-2 text-xs sm:text-sm font-medium hidden sm:inline">WhatsApp Us</span>
+          <span className="ml-1 sm:ml-2 text-xs sm:text-sm font-medium hidden sm:inline">
+            WhatsApp Us
+          </span>
         </button>
-      </div>
+      </div> */}
     </footer>
-  )
+  );
 }
